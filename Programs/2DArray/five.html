@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        
+
+            void get(int matrix[3][3])
+            {
+                int i,j;
+                for ( i = 0; i < 3; i++)
+                {
+                    for(j=0;j < 3;j++)
+                    {
+                        scanf("%d",&matrix[i][j]);
+                    }
+                }
+                
+            }
+            
+            void display(int matrix[3][3])
+            {
+                int i,j;
+                for(i=0; i < 3;i++)
+                {
+                    for(j=0; j < 3;j++)
+                    {
+                        printf("%d ",matrix[i][j]);
+                    }
+                    printf("\n");
+                }
+            }
+            void copyMatrix(int matrix[3][3],int matrix2[3][3])
+            {
+                int i,j,temp;
+                for(i=0; i < 3;i++)
+                {
+                    for(j=0; j < 3;j++)
+                    {
+                        
+                        matrix2[i][j]=matrix[i][j];
+                    }
+                    
+                }
+            }
+            void main()
+            {
+                int matrix[3][3],matrix2[3][3];
+                get(matrix);
+                display(matrix);
+                copyMatrix(matrix,matrix2);
+                printf("Copied matrix\n");
+                display(matrix2);
+            }
+                  
+output
+Enter value at 1 position
+4
+Enter value at 2 position
+3
+Enter value at 3 position
+2
+Enter value at 4 position
+5
+Enter value at 5 position
+6
+Enter value at 6 position
+9
+Enter value at 7 position
+8
+Enter value at 8 position
+15
+Enter value at 9 position
+24
+Enter value at 10 position
+56
+Your Enter Array is :- 
+
+4
+3
+2
+5
+6
+9
+8
+15
+24
+56
+
+    </pre>
+</body>
+</html>
