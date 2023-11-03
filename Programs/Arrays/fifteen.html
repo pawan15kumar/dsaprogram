@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+
+
+            // Function to check if a number is a palindrome
+            int isPalindrome(int num) {
+                int originalNum = num;
+                int reverseNum = 0;
+            
+                while (num > 0) {
+                    int digit = num % 10;
+                    reverseNum = reverseNum * 10 + digit;
+                    num /= 10;
+                }
+            
+                return (originalNum == reverseNum);
+            }
+            
+            int main() {
+                int size;
+                printf("Enter the size of the array: ");
+                scanf("%d", &size);
+            
+                if (size <= 0) {
+                    printf("Invalid array size.\n");
+                    return 1;
+                }
+            
+                int arr[size];
+            
+                printf("Enter %d numbers:\n", size);
+                for (int i = 0; i < size; i++) {
+                    scanf("%d", &arr[i]);
+                }
+            
+                printf("Palindrome numbers in the array are:\n");
+                for (int i = 0; i < size; i++) {
+                    if (isPalindrome(arr[i])) {
+                        printf("%d\n", arr[i]);
+                    }
+                }
+            
+                return 0;
+            }
+            output
+            Enter the size of the array: 1
+Enter 1 numbers:
+2
+Palindrome numbers in the array are:
+2
+3
+dash: 2: 3: not found
+4
+dash: 3: 4: not found
+2
+dash: 4: 2: not found
+
+
+            
+    </pre>
+</body>
+</html>

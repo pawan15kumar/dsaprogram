@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        // Enter an array from user and copy it into another array in reverse order
+        
+        
+        int main(){
+            int arr[10], i,arrcpy[10];
+            for (i = 0; i < 10; i++)
+            {
+                printf("Enter Value of position %d\n", i+1);
+                scanf("%d", &arr[i]);
+            }
+        
+            for (i = 0; i < 10; i++)
+            {
+                arrcpy[9-i] = arr[i];
+            }
+            printf("Printing Copied Array Values\n");
+            for (i = 0; i < 10; i++)
+            {
+                  printf("Value at position %d is %d\n", i+1, arrcpy[i]);
+            }
+            return 0;
+        }
+        output
+        Enter Value of position 4
+5
+Enter Value of position 5
+1
+Enter Value of position 6
+6
+Enter Value of position 7
+8
+Enter Value of position 8
+5
+Enter Value of position 9
+3
+Enter Value of position 10
+6
+Printing Copied Array Values
+Value at position 1 is 6
+Value at position 2 is 3
+Value at position 3 is 5
+Value at position 4 is 8
+Value at position 5 is 6
+Value at position 6 is 1
+Value at position 7 is 5
+Value at position 8 is 2
+Value at position 9 is 3
+Value at position 10 is 2
+
+
+
+    </pre>
+</body>
+</html>

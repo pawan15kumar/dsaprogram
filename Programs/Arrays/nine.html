@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        //Enter an array from user and find the k-th smallest value
+void sort(int arr[], int size){
+    int i , j;
+    for (i = 0; i < size; i++){
+        for (j = i+1; j < size; j++){
+            if (arr[i] > arr[j]){
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+}
+int main(){
+    int i, arr[10], k;
+    for (i = 0; i < 10; i++){
+        printf("Enter Value of position %d\n", i+1);
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter K-th Value\n");
+    scanf("%d", &k);
+
+    if (k >= 1 && k <=10){
+        sort(arr, 10);
+        printf("K-th Smallest Value of given list is %d", arr[k-1]);
+    }
+    else
+        printf("We have only 10 element list");
+    return 0;
+}
+output
+Enter Value of position 1
+1
+Enter Value of position 2
+2
+Enter Value of position 3
+3
+Enter Value of position 4
+4
+Enter Value of position 5
+5
+6Enter Value of position 6
+
+7
+Enter Value of position 7
+8
+Enter Value of position 8
+9
+Enter Value of position 9
+0
+Enter Value of position 10
+1
+Enter K-th Value
+2
+K-th Smallest Value of given list is 1
+
+    </pre>
+</body>
+</html>

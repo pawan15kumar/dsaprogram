@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        // Enter an array from user and print the number which is positive
+
+int main(){
+    int arr[10], i;
+    for (i = 0; i < 10; i++)
+    {
+        printf("Enter Value of position %d\n", i+1);
+        scanf("%d", &arr[i]);
+    }
+    printf("Even Values Are\n");
+    for (i = 0; i < 10; i++)
+    {
+        if (arr[i] > 0)
+            printf("%d\n", arr[i]); 
+    }
+    return 0;
+}
+output
+Enter Value of position 1
+5
+Enter Value of position 2
+3
+Enter Value of position 3
+4
+6
+Enter Value of position 4
+4
+
+6
+Enter Value of position 5
+Enter Value of position 6
+2
+Enter Value of position 72
+Enter Value of position 8
+1
+Enter Value of position 9
+3
+Enter Value of position 10
+1
+Even Values Are
+5
+3
+4
+4
+6
+2
+2
+1
+3
+1
+
+
+
+
+    </pre>
+</body>
+</html>
